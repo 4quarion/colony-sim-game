@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://vcqn15mr8ufr"]
+[gd_scene load_steps=8 format=3 uid="uid://vcqn15mr8ufr"]
 
 [ext_resource type="Script" path="res://scene/Main/Main.gd" id="1_7ioik"]
 [ext_resource type="Script" path="res://scripts/grid.gd" id="2_e2c0f"]
@@ -8,12 +8,18 @@
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_p2xw4"]
 
+[sub_resource type="TileSet" id="TileSet_rv87a"]
+
 [node name="Main" type="Node2D"]
 script = ExtResource("1_7ioik")
 
-[node name="Grid" type="Node2D" parent="."]
+[node name="Grid" type="TileMap" parent="."]
 texture_filter = 1
 material = SubResource("CanvasItemMaterial_p2xw4")
+tile_set = SubResource("TileSet_rv87a")
+format = 2
+layer_1/name = "Layer1"
+layer_1/z_index = 1
 script = ExtResource("2_e2c0f")
 show_debug = true
 
