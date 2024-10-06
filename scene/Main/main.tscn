@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://vcqn15mr8ufr"]
+
+[ext_resource type="Script" path="res://scene/Main/main.gd" id="1_7vexm"]
+[ext_resource type="Script" path="res://scripts/grid.gd" id="2_g8cv6"]
+[ext_resource type="Script" path="res://scripts/camera_2d.gd" id="3_jomtf"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_p2xw4"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_7vexm")
+
+[node name="Grid" type="Node2D" parent="."]
+texture_filter = 1
+material = SubResource("CanvasItemMaterial_p2xw4")
+script = ExtResource("2_g8cv6")
+show_debug = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+script = ExtResource("3_jomtf")
