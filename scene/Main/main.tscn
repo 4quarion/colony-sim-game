@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://vcqn15mr8ufr"]
+[gd_scene load_steps=7 format=3 uid="uid://vcqn15mr8ufr"]
 
 [ext_resource type="Script" path="res://scene/Main/Main.gd" id="1_7ioik"]
 [ext_resource type="Script" path="res://scripts/grid.gd" id="2_e2c0f"]
 [ext_resource type="Script" path="res://scripts/Camera_2d.gd" id="3_cnkhw"]
 [ext_resource type="PackedScene" uid="uid://bt68n6inlb4sb" path="res://scene/Unit/area_2d.tscn" id="3_w7vxg"]
+[ext_resource type="Script" path="res://scene/Main/Pathfinding.gd" id="4_nkdgl"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_p2xw4"]
 
@@ -21,6 +22,9 @@ show_debug = true
 [node name="Units" type="Node2D" parent="Grid"]
 
 [node name="Area2D" parent="Grid/Units" instance=ExtResource("3_w7vxg")]
+
+[node name="Pathfinding" type="Node" parent="Grid"]
+script = ExtResource("4_nkdgl")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 script = ExtResource("3_cnkhw")
