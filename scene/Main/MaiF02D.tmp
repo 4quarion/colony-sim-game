@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://scripts/grid.gd" id="2_e2c0f"]
 [ext_resource type="Script" path="res://scripts/Camera_2d.gd" id="3_cnkhw"]
 [ext_resource type="PackedScene" uid="uid://bt68n6inlb4sb" path="res://scene/Unit/area_2d.tscn" id="3_w7vxg"]
-[ext_resource type="Script" path="res://scripts/pathfinding.gd" id="4_qo0nb"]
+[ext_resource type="Script" path="res://pathfinding.gd" id="4_qo0nb"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_p2xw4"]
 
